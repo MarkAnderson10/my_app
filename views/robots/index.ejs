@@ -6,8 +6,12 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p><%= myMessage %></p>
-    <p>Welcome to <%= title %></p>
-    <a href="/robots/robots">Robots List</a>
+
+    <ul>
+      <% robots.forEach(function(robot){ %>
+        <li><%= robot._id %> - <%= robot.name %> - <%= robot.description %></li>
+      <% }); %>
+    </ul>
+
   </body>
 </html>
