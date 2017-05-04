@@ -6,8 +6,16 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p><%= myMessage %></p>
     <p>Welcome to <%= title %></p>
-    <a href="/robots/robots">Robots List</a>
+
+    <nav>
+      <ul>
+        <li><a href="/robots">List Robots</a></li>
+      </ul>
+    </nav>
+
+    <hr style="margin-top:2em;">
+
+    <% include ./footer %>
   </body>
 </html>
